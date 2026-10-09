@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.51]
+
+### Dependencies
+
+- Upgraded to `dialog-js@2.8.2`
+- Upgraded to `fs-js@2.7.0`
+- Upgraded to `biometric-js@2.4.2`
+- Upgraded to `nfc-js@2.4.2`
+- Upgraded to `notification-js@2.6.0`
+- Upgraded to `shell-js@2.5.0`
+- Upgraded to `updater-js@2.13.3`
+- Upgraded to `http-js@2.8.2`
+
 ## [2.0.50]
 
 ### Dependencies

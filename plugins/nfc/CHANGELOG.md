@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.4.2]
+
+- [`9a74a78c`](https://github.com/tauri-apps/plugins-workspace/commit/9a74a78c711607e8eac40ff5e1a4c6038613a053) ([#3674](https://github.com/tauri-apps/plugins-workspace/pull/3674)) Fix compilation on iOS when the `wry` feature of `tauri` is not enabled by another crate.
+
 ## [2.4.1]
 
 - [`569ee82c`](https://github.com/tauri-apps/plugins-workspace/commit/569ee82cf61a358b4c73ba52f2e99f3317ec05d0) Fix the docs.rs build for Android: the build script now detects docs.rs through the `DOCS_RS` environment variable, since `cfg(docsrs)` is never set for build scripts.

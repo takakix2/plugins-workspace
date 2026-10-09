@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.6.0]
+
+### feat
+
+- [`46381516`](https://github.com/tauri-apps/plugins-workspace/commit/46381516b7bd7b6915ded698d93e92760b4221d7) ([#3671](https://github.com/tauri-apps/plugins-workspace/pull/3671)) Report actions on desktop: a click on a notification (`tap`) or on one of the actions of its action type reaches `onAction` and the new Rust `Notification::on_action`, which also works on mobile. `registerActionTypes`, `removeActive` (Linux and the BSDs) and the listener commands no longer fail with "command not found" on desktop.
+    
+    The `onAction` callback is now typed with the new `ActionPerformed` interface, which is what every platform sends, instead of `Options`. Callbacks annotated with `Options` must be updated.
+
 ## [2.5.1]
 
 - [`569ee82c`](https://github.com/tauri-apps/plugins-workspace/commit/569ee82cf61a358b4c73ba52f2e99f3317ec05d0) Fix the docs.rs build for Android: the build script now detects docs.rs through the `DOCS_RS` environment variable, since `cfg(docsrs)` is never set for build scripts.
